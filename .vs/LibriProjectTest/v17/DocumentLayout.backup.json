@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\kozos\\SzOliver\\libri-selenium-test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52AA3948-8DFC-45FF-99CB-0FBC965B70F2}|LibriProjectTest.csproj|c:\\kozos\\szoliver\\libri-selenium-test\\seleniumtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52AA3948-8DFC-45FF-99CB-0FBC965B70F2}|LibriProjectTest.csproj|solutionrelative:seleniumtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52AA3948-8DFC-45FF-99CB-0FBC965B70F2}|LibriProjectTest.csproj|c:\\kozos\\szoliver\\libri-selenium-test\\libriprojecttest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{52AA3948-8DFC-45FF-99CB-0FBC965B70F2}|LibriProjectTest.csproj|solutionrelative:libriprojecttest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibriProjectTest.csproj",
+              "DocumentMoniker": "C:\\kozos\\SzOliver\\libri-selenium-test\\LibriProjectTest.csproj",
+              "RelativeDocumentMoniker": "LibriProjectTest.csproj",
+              "ToolTip": "C:\\kozos\\SzOliver\\libri-selenium-test\\LibriProjectTest.csproj",
+              "RelativeToolTip": "LibriProjectTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-28T08:57:15.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeleniumTest.cs",
+              "DocumentMoniker": "C:\\kozos\\SzOliver\\libri-selenium-test\\SeleniumTest.cs",
+              "RelativeDocumentMoniker": "SeleniumTest.cs",
+              "ToolTip": "C:\\kozos\\SzOliver\\libri-selenium-test\\SeleniumTest.cs",
+              "RelativeToolTip": "SeleniumTest.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFEAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:27:28.997Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

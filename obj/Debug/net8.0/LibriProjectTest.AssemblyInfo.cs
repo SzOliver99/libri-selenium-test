@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibriProjectTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9755a4cebb8dcc69966fe1adaf2677386aca5d7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibriProjectTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibriProjectTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

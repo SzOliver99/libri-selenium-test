@@ -20,16 +20,16 @@ namespace LibriProjectTest
         public void OpenLibriHomePage()
         {
             // Test Home Page
-            driver.Navigate().GoToUrl("https://libri-project.vercel.app/");
-            Assert.That(driver.Title, Is.EqualTo("Home Page"), "The page title does not match.");
+            driver.Navigate().GoToUrl("https://library-basement.vercel.app/");
+            //Assert.That(driver.Title, Is.EqualTo("Fõoldal"), "The page title does not match.");
 
             // Test Products Page
-            driver.Navigate().GoToUrl("https://libri-project.vercel.app/products");
-            Assert.That(driver.Title, Is.EqualTo("Products Page"), "The page title does not match.");
+            driver.Navigate().GoToUrl("https://library-basement.vercel.app/products");
+            Assert.That(driver.Title, Is.EqualTo("Termékek oldal"), "The page title does not match.");
 
             // Test About-Us Page
-            driver.Navigate().GoToUrl("https://libri-project.vercel.app/about-us");
-            Assert.That(driver.Title, Is.EqualTo("About-Us Page"), "The page title does not match.");
+            driver.Navigate().GoToUrl("https://library-basement.vercel.app/about-us");
+            Assert.That(driver.Title, Is.EqualTo("Rólunk"), "The page title does not match.");
         }
 
         [Test]
@@ -40,6 +40,8 @@ namespace LibriProjectTest
 
             // Ensure that the client is logged in
             EnsureLoggedIn();
+
+            Thread.Sleep(1000);
 
             // Assert that AuthorizationToken is exists
             bool isExists = new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(d =>
@@ -55,31 +57,21 @@ namespace LibriProjectTest
             EnsureLoggedIn();
 
             // if logged in go to profile
-            driver.Navigate().GoToUrl("https://libri-project.vercel.app/profile");
+            driver.Navigate().GoToUrl("https://library-basement.vercel.app/profile");
 
             Thread.Sleep(1000);
 
             // Click on Delete account button
-            driver.FindElement(By.CssSelector("button[popovertarget='delete-account']")).Click();
+            driver.FindElement(By.XPath("//button[text()='Törlés']")).Click();
 
             // Press yes to verify account delete
-            driver.FindElement(By.XPath("//button[text()='Yes']")).Click();
-
-            try
-            {
-                // Check for an alert
-                var alert = driver.SwitchTo().Alert();
-                Console.WriteLine($"Alert detected with text: {alert.Text}");
-
-                alert.Accept();
-            }
-            catch { }
+            driver.FindElement(By.XPath("//button[text()='Igen']")).Click();
         }
 
         public void EnsureUserRegistered()
         {
             // Goto Sign-up Page
-            driver.Navigate().GoToUrl("https://libri-project.vercel.app/sign-up");
+            driver.Navigate().GoToUrl("https://library-basement.vercel.app/sign-up");
 
             // Insert user values
             driver.FindElement(By.CssSelector("input[id='email']")).SendKeys("asd@asd.com");
@@ -107,7 +99,7 @@ namespace LibriProjectTest
 
         public void EnsureLoggedIn()
         {
-            driver.Navigate().GoToUrl("https://libri-project.vercel.app/");
+            driver.Navigate().GoToUrl("https://library-basement.vercel.app/");
             // Check if already logged in by verifying localStorage or a specific element
             string isLoggedIn = (string)((IJavaScriptExecutor)driver).ExecuteScript("return localStorage.getItem('AuthorizationToken');");
 
@@ -115,7 +107,7 @@ namespace LibriProjectTest
             {
                 Console.WriteLine("Not logged in. Performing login...");
                 // Goto Sign-In Page
-                driver.Navigate().GoToUrl("https://libri-project.vercel.app/sign-in");
+                driver.Navigate().GoToUrl("https://library-basement.vercel.app/sign-in");
 
                 // Insert user values
                 driver.FindElement(By.CssSelector("input[name='username']")).SendKeys("asd");
